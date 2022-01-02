@@ -1,5 +1,5 @@
 help:
-	@echo 'Makefile for managing docker-compose airflow                       '
+	@echo 'Makefile for managing airflow via docker-compose                   '
 	@echo '                                                                   '
 	@echo 'Usage:                                                             '
 	@echo ' make init       initialise environment, AWS_ACCESS_KEY and AWS_SECRET_KEY '
