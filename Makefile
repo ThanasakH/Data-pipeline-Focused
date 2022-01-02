@@ -13,8 +13,8 @@ init:
 	echo "AIRFLOW_UID=$(shell id -u)\nAIRFLOW_GID=0\nAWS_ACCESS_KEY=$(ACCESS_KEY)\nAWS_SECRET_KEY=$(SECRET_KEY)" > .env
 
 build:
-	docker-compose build
 	docker-compose up airflow-init
+	docker build -t apache/airflow:2.1.0 .
 
 up:
 	docker-compose up -d
