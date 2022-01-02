@@ -153,13 +153,11 @@ def upload_to_s3(execution_year, execution_week, local_file, s3_file):
         # upload file to s3 bucket
         s3.upload_file(local_file, AWS_Config.BUCKET_NAME, s3_file)
         print("Upload Successful [{0}]".format(s3_file))
-        return True
     except FileNotFoundError:
-        print("The file was not found [{0}]".format(local_file))
-        return False
+        # print("The file was not found [{0}]".format(local_file))
+        raise("The file was not found [{0}]".format(local_file))
     except NoCredentialsError:
-        print("Credentials not available")
-        return False
+        raise("Credentials not available")
 
 
 
