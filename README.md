@@ -29,7 +29,9 @@ This project has been designed to create a Data pipeline solution on the Apache 
 Please make sure a Docker has been installed on your machine before moving on next steps.
 
 1. Clone this repository.
-
+```
+git clone https://github.com/ThanasakH/Data-pipeline-Focused.git
+```
 
 2. Initialise environment file, and an AWS credentials. This step, you'll need to enter AWS_ACCESS_KEY, SECRET_KEY, and S3_BUCKET_NAME
 ```
@@ -46,7 +48,7 @@ make build
 make up
 ```
 
-Note: once, you would like to stop service and removes containers.
+Note: Once you would like to stop service and removes containers.
 ```
 make down
 ```
