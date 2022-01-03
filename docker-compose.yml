@@ -53,6 +53,7 @@
         AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
         AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
         AWS_SECRET_KEY: ${AWS_SECRET_KEY}
+        AWS_BUCKET_NAME: ${AWS_BUCKET_NAME}
       volumes:
         - ./dags:/opt/airflow/dags
         - ./logs:/opt/airflow/logs
