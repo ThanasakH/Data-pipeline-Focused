@@ -1,16 +1,17 @@
 help:
-	@echo 'Makefile for managing airflow via docker-compose                   '
+	@echo 'Makefile for managing docker-compose airflow                       '
 	@echo '                                                                   '
 	@echo 'Usage:                                                             '
-	@echo ' make init       initialise environment, AWS_ACCESS_KEY and AWS_SECRET_KEY '
+	@echo ' make init       initialise environment, AWS_ACCESS_KEY, SECRET_KEY, & BUCKET_NAME '
 	@echo ' make build      build images                                '
 	@echo ' make up         creates containers and starts service       '
 	@echo ' make down       stops service and removes containers        '
 
 init:
-	@$(eval ACCESS_KEY=$(shell stty -echo; read -p "AWS_ACCESS_KEY: " pwd; stty echo; echo $$pwd)) 
-	@$(eval SECRET_KEY=$(shell stty -echo; read -p "AWS_SECRET_KEY: " pwd; stty echo; echo $$pwd)) 
-	echo "AIRFLOW_UID=$(shell id -u)\nAIRFLOW_GID=0\nAWS_ACCESS_KEY=$(ACCESS_KEY)\nAWS_SECRET_KEY=$(SECRET_KEY)" > .env
+	@read -p "Enter AWS_ACCESS_KEY: " AWS_ACCESS_KEY; \
+	read -p "Enter AWS_SECRET_KEY: " AWS_SECRET_KEY; \
+	read -p "Enter AWS_BUCKET_NAME: " AWS_BUCKET_NAME; \
+	echo "AIRFLOW_UID=$$(id -u)\nAIRFLOW_GID=0\nAWS_ACCESS_KEY=$$AWS_ACCESS_KEY\nAWS_SECRET_KEY=$$AWS_SECRET_KEY\nAWS_BUCKET_NAME=$$AWS_BUCKET_NAME" > .env
 
 build:
 	docker-compose up airflow-init
