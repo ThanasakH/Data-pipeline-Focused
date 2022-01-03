@@ -1,15 +1,12 @@
-
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
-
 import os
 import datetime
 import pandas as pd
 import requests
 import json
 from bs4 import BeautifulSoup
-
 import boto3
 from botocore.exceptions import NoCredentialsError
 
@@ -18,7 +15,7 @@ from botocore.exceptions import NoCredentialsError
 class AWS_Config:
     ACCESS_KEY = os.getenv("AWS_ACCESS_KEY")
     SECRET_KEY = os.getenv("AWS_SECRET_KEY")
-    BUCKET_NAME = 's3-bucket-hellofresh'
+    BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
 
 MOCK_API = True
 
