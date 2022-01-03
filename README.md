@@ -25,7 +25,9 @@ This project has been designed to create a Data pipeline solution on the Apache 
 **Destination**
 - `AWS S3 Bucket`: the S3 service will store the results in csv format via boto3 library.
 
-# Installation and Start Service
+# How to run this project locally
+
+## Installation and Start Service
 Please make sure a Docker has been installed on your machine before moving on next steps.
 
 1. Clone this repository.
@@ -53,7 +55,7 @@ Note: Once you would like to stop service and removes containers.
 make down
 ```
 
-# Execution
+## Execution
 
 **To manaully trigger the task:**
 1. Navigate to http://localhost:8080
