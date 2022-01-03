@@ -23,7 +23,7 @@ This project has been designed to create a Data pipeline solution on the Apache 
 - `Recipes_pipeline(DAG)`: it manipulates the entire workflow. For instance, gathering data from sources, transforming data, and transfering data to the destination.
 
 **Destination**
-- `AWS S3 Bucket`: the S3 service will be stored the results in csv format via boto3 library.
+- `AWS S3 Bucket`: the S3 service will store the results in csv format via boto3 library.
 
 # Installation
 
