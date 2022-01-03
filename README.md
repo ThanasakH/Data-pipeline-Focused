@@ -25,7 +25,7 @@ This project has been designed to create a Data pipeline solution on the Apache 
 **Destination**
 - `AWS S3 Bucket`: the S3 service will store the results in csv format via boto3 library.
 
-# Installation
+# Installation and Start Service
 Please make sure a Docker has been installed on your machine before moving on next steps.
 
 1. Clone this repository.
