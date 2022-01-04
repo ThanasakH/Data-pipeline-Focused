@@ -177,7 +177,7 @@ default_args = {
     'owner': 'thanasak.ha',
     'depends_on_past': False,
     'catchup': False,
-    'start_date': days_ago(1),
+    'start_date': datetime.datetime(2022, 1, 1),
     'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
@@ -187,11 +187,12 @@ default_args = {
 
 # Create DAG
 dag = DAG(
-    'Recipes_pipeline',
+    dag_id='Recipes_pipeline',
     default_args=default_args,
     description='Pipeline for ETL recipes and top10 recipes data',
     schedule_interval="@weekly",
-    start_date=days_ago(1),
+    start_date=datetime.datetime(2022, 1, 1),
+    catchup=False,
 )
 
 # Tasks
