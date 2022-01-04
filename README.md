@@ -28,7 +28,7 @@ This project has been designed to demonstrate a Data pipeline solution on the Ap
 # How to run this project locally
 
 ## Installation and Start Service
-Please make sure a Docker has been installed on your machine before moving on next steps.
+Please make sure Docker and Docker-Compose have been installed on your machine before moving on next steps.
 
 1. Clone this repository.
 ```
