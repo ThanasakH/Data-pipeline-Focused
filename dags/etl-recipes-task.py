@@ -117,20 +117,34 @@ def get_top10_recipes(execution_year, execution_week, recipes_output_path, top10
     # load data from csv
     df_recipe = pd.read_csv(recipes_output_path)
 
+    # rank dataframe base on ratingsCount
+    df_base_ratingsCount = df_recipe.sort_values("ratingsCount", ascending=False)
+    df_base_ratingsCount['rank'] = df_base_ratingsCount['ratingsCount'].rank(ascending=False, method='min')
+    df_base_ratingsCount = df_base_ratingsCount.head(10)
+    df_base_ratingsCount["rankBaseOn"] = "ratingsCount"
+    df_base_ratingsCount.reset_index(inplace=True, drop=True)
+
+    # rank dataframe base on favoritesCount
+    df_base_favoritesCount = df_recipe.sort_values("favoritesCount", ascending=False)
+    df_base_favoritesCount['rank'] = df_base_favoritesCount['favoritesCount'].rank(ascending=False, method='min')
+    df_base_favoritesCount = df_base_favoritesCount.head(10)
+    df_base_favoritesCount["rankBaseOn"] = "favoritesCount"
+    df_base_favoritesCount.reset_index(inplace=True, drop=True)
+
+    # union the ranking results
+    df_recipe = pd.concat([df_base_ratingsCount, df_base_favoritesCount])
+
     # assign datatypes
-    df_recipe = df_recipe.astype({"ratingsCount":pd.Int64Dtype(),
+    df_recipe = df_recipe.astype({"rank":pd.Int64Dtype(),
+                                "ratingsCount":pd.Int64Dtype(),
                                 "favoritesCount":pd.Int64Dtype()
                                 })
-
-    # sum up ratingsCount and favoritesCount columns
-    df_recipe["sumCount"] = df_recipe[["ratingsCount", "favoritesCount"]].sum(axis=1)
-
-    # order by sumCount descending
-    df_recipe.sort_values("sumCount", ascending=False, inplace=True)
-    df_recipe.reset_index(inplace=True, drop=True)
+    # reindex columns
+    cols = ["rank", "rankBaseOn"] + list(df_recipe.columns[:-2])
+    df_recipe = df_recipe.reindex(columns=cols)
 
     # save dataframe to csv file
-    df_recipe.drop(columns=["sumCount"]).head(10).to_csv(top10_recipes_output_path, index=False)
+    df_recipe.to_csv(top10_recipes_output_path, index=False)
 
 def upload_to_s3(execution_year, execution_week, local_file, s3_file):
     # assign current year & week for the process if there is no argument passing
