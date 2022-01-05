@@ -8,13 +8,13 @@ rank,rankBaseOn,name,headline,prepTime (M),ratingsCount,favoritesCount,nutrition
 7,ratingsCount,"Apricot, Almond & Chickpea Tagine","with Zucchini, Basmati Rice & Chermoula",30,3,192,3974.8,48,14,112,23,14,20,50,1160
 8,ratingsCount,Cranberry-Apple Kale Salad,with Parm Frico & Garlic Ciabatta,30,2,148,3640.08,51,16,88,34,12,15,60,930
 9,ratingsCount,Shawarma-Spiced Chickpea Fritters,"with Dill Yogurt Sauce plus an Arugula, Almond & Apricot Salad",30,0,172,2719.6,21,3,96,22,14,21,10,1840
-9,ratingsCount,Sweet Soy Chicken Cutlets,with a Roasted Sweet Potato & Pepper Jumble,35,0,24,2301.2000000000007,18,5,63,23,9,37,120,800
+9,ratingsCount,Sweet Soy Chicken Cutlets,with a Roasted Sweet Potato & Pepper Jumble,35,0,24,2301.2,18,5,63,23,9,37,120,800
 1,favoritesCount,Crispy Cheddar Chicken,with Loaded Bacon Mashed Potatoes & Broccoli,40,11,1026,4393.2,68,26,48,5,8,52,230,960
 2,favoritesCount,Crispy Cajun Chicken Sandwiches,with Crispy Potatoes & Secret Sauce,35,6,807,4811.6,61,19,109,12,4,42,205,1820
 3,favoritesCount,Creamy Shrimp & Bacon Spaghetti,with Smoky Charred Corn & Chives,35,,697,4811.6,55,23,106,14,7,43,310,2470
 4,favoritesCount,Crunchy Italian Chicken Sheet Pan Bake,with Spiced Potatoes & Lemony Broccoli,35,4,622,2677.76,29,9,53,7,10,46,140,430
 5,favoritesCount,Firecracker Meatballs,with Roasted Green Beans & Jasmine Rice,40,21,541,3263.52,41,13,68,12,3,31,120,1650
-6,favoritesCount,Penne Rustica with a Kick,tossed with Asparagus & topped with Crispy Panko,25,0,446,3221.6800000000007,40,19,90,9,9,20,75,370
+6,favoritesCount,Penne Rustica with a Kick,tossed with Asparagus & topped with Crispy Panko,25,0,446,3221.68,40,19,90,9,9,20,75,370
 7,favoritesCount,Garden Spinach Ricotta Ravioli,"with Zucchini Ribbons, Tomato & Creamy Lemon Sauce",15,6,346,2468.56,31,15,63,10,11,20,120,1070
 8,favoritesCount,One-Pan Beef & Charred Pepper Tacos,with Mango Salsa & Smoky Red Pepper Crema,25,4,286,3389.04,41,17,77,19,4,35,115,1470
 9,favoritesCount,One-Pot Longhorn Turkey & Bean Chili,with Jalapeño & Smoky Red Pepper Crema,30,0,266,2677.76,27,6,52,10,11,42,110,1700

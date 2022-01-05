@@ -1,8 +1,8 @@
 name,headline,prepTime (M),ratingsCount,favoritesCount,nutrition - Energy (kJ),nutrition - Fat (g),nutrition - Saturated Fat (g),nutrition - Carbohydrate (g),nutrition - Sugar (g),nutrition - Dietary Fiber (g),nutrition - Protein (g),nutrition - Cholesterol (mg),nutrition - Sodium (mg)
 "Apricot, Almond & Chickpea Tagine","with Zucchini, Basmati Rice & Chermoula",30,3,192,3974.8,48,14,112,23,14,20,50,1160
-Bacon Jalapeño Mac & Cheese,with Philadelphia Cream Cheese & a Crispy Panko Topping,35,0,47,4853.4400000000005,71,35,87,7,4,37,175,1350
+Bacon Jalapeño Mac & Cheese,with Philadelphia Cream Cheese & a Crispy Panko Topping,35,0,47,4853.44,71,35,87,7,4,37,175,1350
 Chicken Sausage Spaghetti Bolognese,with Zucchini & Parmesan,30,0,30,3556.4,34,13,96,18,7,43,150,2210
-Cranberry-Apple Kale Salad,with Parm Frico & Garlic Ciabatta,30,2,148,,,,,,,,,
+Cranberry-Apple Kale Salad,with Parm Frico & Garlic Ciabatta,30,2,148,3640.08,51,16,88,34,12,15,60,930
 Creamy Shrimp & Bacon Spaghetti,with Smoky Charred Corn & Chives,35,,697,4811.6,55,23,106,14,7,43,310,2470
 Crispy Cajun Chicken Sandwiches,with Crispy Potatoes & Secret Sauce,35,6,807,4811.6,61,19,109,12,4,42,205,1820
 Crispy Cheddar Chicken,with Loaded Bacon Mashed Potatoes & Broccoli,40,11,1026,4393.2,68,26,48,5,8,52,230,960
@@ -10,17 +10,17 @@ Crunchy Italian Chicken Sheet Pan Bake,with Spiced Potatoes & Lemony Broccoli,35
 Firecracker Meatballs,with Roasted Green Beans & Jasmine Rice,40,21,541,3263.52,41,13,68,12,3,31,120,1650
 Garden Spinach Ricotta Ravioli,"with Zucchini Ribbons, Tomato & Creamy Lemon Sauce",15,6,346,2468.56,31,15,63,10,11,20,120,1070
 Garlic Herb Butter Shrimp & Lobster Tails,with Lemony Broccoli & Chive Crème Fraîche Mashed Potatoes,40,0,33,3430.88,45,24,49,7,10,51,405,1310
-Jammy Red Pepper Chicken,with Lemony Green Beans & Scallion Rice,25,0,13,2552.2400000000002,24,9,63,13,5,34,140,440
+Jammy Red Pepper Chicken,with Lemony Green Beans & Scallion Rice,25,0,13,2552.24,24,9,63,13,5,34,140,440
 One-Pan Beef & Charred Pepper Tacos,with Mango Salsa & Smoky Red Pepper Crema,25,4,286,3389.04,41,17,77,19,4,35,115,1470
 One-Pan Sesame Beef Tacos,with Quick-Pickled Veggies & Chili Sour Cream,20,0,15,3430.88,46,18,69,14,2,35,115,1540
 One-Pot Longhorn Turkey & Bean Chili,with Jalapeño & Smoky Red Pepper Crema,30,0,266,2677.76,27,6,52,10,11,42,110,1700
 One-Pot Mexicali Black Bean Soup,with Food Should Taste Good™️ Blue Corn Tortilla Chips & the Works,20,0,21,2594.08,26,9,68,13,12,22,40,1800
-Penne Rustica with a Kick,tossed with Asparagus & topped with Crispy Panko,25,0,446,3221.6800000000003,40,19,90,9,9,20,75,370
+Penne Rustica with a Kick,tossed with Asparagus & topped with Crispy Panko,25,0,446,3221.68,40,19,90,9,9,20,75,370
 Shawarma-Spiced Chickpea Fritters,"with Dill Yogurt Sauce plus an Arugula, Almond & Apricot Salad",30,0,172,2719.6,21,3,96,22,14,21,10,1840
 Sheet Pan Turkey-Meatball Flatbreads,made with Pre-Cooked Turkey Meatballs & Green Bell Pepper,30,0,155,2886.96,29,13,75,11,6,40,145,1420
 Smothered Pepper Jack Pork Burgers,with Spicy Ketchup & BBQ Sweet Potato Wedges,35,0,2,4225.84,50,19,98,24,8,36,125,1050
 Spicy Harissa Chicken Bowls,over Tabbouleh with Feta & Greek Vinaigrette,25,0,25,2677.76,33,11,50,5,8,40,135,1310
 Sweet & Smoky Pork Tenderloin,"with Chili Roasted Carrots, Mashed Potatoes & Cherry Sauce",40,0,21,2845.12,29,12,66,30,9,37,155,260
 Sweet Potato Fajitas,"with Pepper Jack, Pickled Jalapeño & Lime Crema",35,0,16,3556.4,39,19,108,19,9,23,65,1390
-Sweet Soy Chicken Cutlets,with a Roasted Sweet Potato & Pepper Jumble,35,0,24,2301.2000000000003,18,5,63,23,9,37,120,800
+Sweet Soy Chicken Cutlets,with a Roasted Sweet Potato & Pepper Jumble,35,0,24,2301.2,18,5,63,23,9,37,120,800
 Tuscan Pork-Stuffed Peppers,with Pearled Couscous & Melted Mozz,35,0,22,3430.88,47,17,58,11,5,38,130,540
