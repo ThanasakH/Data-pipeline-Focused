@@ -95,7 +95,7 @@ def format_columns(df, col_names, new_col_names):
     for col in col_dict.keys():
         if col == "nutrition.Calories":
             # convert kilojoules to kilocalories as the requirement indicated
-            df[col] = df.apply(lambda x: float(x[col].split()[0]) * 4.184 if x[col]!="nan" else pd.np.NaN , axis=1)
+            df[col] = df.apply(lambda x: round(float(x[col].split()[0]) * 4.184, 2) if x[col]!="nan" else pd.np.NaN , axis=1)
         elif col == "prepTime":
             df[col] = df.apply(lambda x: x[col][2:4] if len(x[col])==5 else pd.np.NaN , axis=1)
         else:
